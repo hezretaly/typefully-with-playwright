@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  typefully:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./.env:/app/.env
+    command: ./entrypoint.sh

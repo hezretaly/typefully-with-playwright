@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-west2-docker.pkg.dev/typefully-upload-test-project/typefully-repo/typefully-image:latest', 'typefully']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'us-west2-docker.pkg.dev/typefully-upload-test-project/typefully-repo/typefully-image:latest']
+images:
+- 'us-west2-docker.pkg.dev/typefully-upload-test-project/typefully-repo/typefully-image:latest'

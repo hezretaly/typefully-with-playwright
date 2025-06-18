@@ -1,2 +1,4 @@
 .env
 temp/
+venv
+downloads
